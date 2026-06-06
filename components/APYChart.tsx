@@ -68,7 +68,9 @@ export default function APYChart({ accounts, years = 5 }: APYChartProps) {
 
   return (
     <div className="w-full h-full bg-white dark:bg-gray-800 rounded-lg p-0 sm:p-2">
-      <ResponsiveContainer width="100%" height="100%">
+      {/* key on theme forces a clean remount so ResponsiveContainer re-measures
+          instead of getting stuck at its -1 sentinel size after a re-render. */}
+      <ResponsiveContainer key={isDark ? "dark" : "light"} width="100%" height="100%">
         <LineChart data={data} margin={{ top: 16, right: 24, bottom: 8, left: 8 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
           <XAxis

@@ -3,7 +3,7 @@ import Dashboard from "@/components/Dashboard";
 import ThemeToggle from "@/components/ThemeToggle";
 
 // Banks to pre-select on load (the "top 3").
-const DEFAULT_SELECTED = ["SoFi", "Marcus by Goldman Sachs", "Capital One 360"];
+const DEFAULT_SELECTED = ["SoFi", "Marcus by Goldman Sachs", "CIT Bank"];
 
 export default function Home() {
   const accounts = loadAccounts();
