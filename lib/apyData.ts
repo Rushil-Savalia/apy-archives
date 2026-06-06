@@ -20,17 +20,17 @@ export interface Account {
   color: string;
 }
 
-// Stable color per bank.
+// Stable color per bank, loosely based on each bank's brand color.
 const BANK_COLORS: Record<string, string> = {
-  'Marcus by Goldman Sachs': '#3B82F6',
-  'Capital One 360': '#10B981',
-  SoFi: '#8B5CF6',
-  'Ally Bank': '#EC4899',
-  'CIT Bank': '#F59E0B',
-  'American Express': '#6366F1',
-  'Western Alliance': '#EF4444',
-  'Primis Bank': '#06B6D4',
-  'Sallie Mae': '#F43F5E',
+  SoFi: '#22C55E', // light green
+  'Marcus by Goldman Sachs': '#1E3A8A', // navy blue
+  'Capital One 360': '#D62828', // red
+  'Sallie Mae': '#2563EB', // blue
+  'American Express': '#00A3E0', // Amex blue
+  'Ally Bank': '#7C3AED', // Ally purple
+  'CIT Bank': '#F59E0B', // amber
+  'Western Alliance': '#0D9488', // teal
+  'Primis Bank': '#DB2777', // pink
 };
 const FALLBACK_COLORS = ['#6B7280', '#0EA5E9', '#D946EF', '#84CC16', '#F97316'];
 

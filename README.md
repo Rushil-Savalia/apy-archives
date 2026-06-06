@@ -5,20 +5,21 @@ savings accounts over time. Data is scraped from
 [DepositAccounts.com](https://www.depositaccounts.com) rate history and stored as
 a CSV that the app reads at build time.
 
-![APY Archives](https://img.shields.io/badge/Next.js-14-black) ![Chart.js](https://img.shields.io/badge/Chart.js-4-ff6384)
+![APY Archives](https://img.shields.io/badge/Next.js-14-black) ![Recharts](https://img.shields.io/badge/Recharts-3-22b5bf)
 
 ## Features
 
-- Interactive line chart of APY over time (Chart.js, stepped lines on a time axis)
+- Interactive line chart of APY over time (Recharts, stepped lines on a time axis)
 - Defaults to the **last 5 years**; SoFi, Marcus, and Capital One pre-selected
 - Toggle any of the tracked banks on/off (with Select all / Remove all)
-- Sortable table of current APY + 5-year trend per bank
+- Table of current APY per bank
+- Light/dark mode toggle (respects system preference, persists choice)
 
 ## Tech stack
 
 - **Next.js 14** (App Router) + **React 18** + **TypeScript**
-- **Tailwind CSS** for styling
-- **Chart.js** / **react-chartjs-2** with `chartjs-adapter-date-fns` for the time axis
+- **Tailwind CSS** for styling (class-based dark mode)
+- **Recharts** (SVG) for the time-series chart
 - **Puppeteer** (dev only) for the data scraper
 
 ## Getting started

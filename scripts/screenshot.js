@@ -8,9 +8,10 @@ const fs = require('fs');
   fs.mkdirSync(path.dirname(out), { recursive: true });
   const browser = await puppeteer.launch({ headless: 'new', executablePath: CHROME, args: ['--no-sandbox'] });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1400, height: 1600, deviceScaleFactor: 1 });
+  const w = parseInt(process.argv[3] || '1400', 10);
+  await page.setViewport({ width: w, height: 1600, deviceScaleFactor: 1 });
   await page.goto('http://localhost:3000', { waitUntil: 'networkidle0', timeout: 60000 });
-  await new Promise((r) => setTimeout(r, 2500)); // let chart.js animate/draw
+  await new Promise((r) => setTimeout(r, 2500)); // let the chart render
   await page.screenshot({ path: out, fullPage: true });
   console.log('saved', out);
   await browser.close();
