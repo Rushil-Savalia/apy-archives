@@ -1,0 +1,428 @@
+Date,Bank Name,Account Name,APY (%)
+2009-12-08,"Ally Bank","Online Savings Account",1.5
+2010-01-05,"Ally Bank","Online Savings Account",1.49
+2010-02-09,"Ally Bank","Online Savings Account",1.44
+2010-02-17,"Ally Bank","Online Savings Account",1.39
+2010-03-03,"Ally Bank","Online Savings Account",1.3
+2010-03-12,"Ally Bank","Online Savings Account",1.29
+2010-08-31,"Ally Bank","Online Savings Account",1.25
+2010-09-28,"Ally Bank","Online Savings Account",1.24
+2010-11-04,"Ally Bank","Online Savings Account",1.19
+2010-11-20,"Ally Bank","Online Savings Account",1.09
+2011-02-23,"Ally Bank","Online Savings Account",1.05
+2011-03-21,"Ally Bank","Online Savings Account",1
+2011-06-10,"Ally Bank","Online Savings Account",1.04
+2011-08-08,"Ally Bank","Online Savings Account",1
+2011-08-25,"Ally Bank","Online Savings Account",0.99
+2011-10-11,"Ally Bank","Online Savings Account",0.94
+2011-10-13,"Ally Bank","Online Savings Account",0.91
+2011-10-20,"Ally Bank","Online Savings Account",0.85
+2011-11-05,"Ally Bank","Online Savings Account",0.89
+2012-01-13,"Ally Bank","Online Savings Account",0.84
+2012-07-21,"Ally Bank","Online Savings Account",0.89
+2012-08-31,"Ally Bank","Online Savings Account",0.95
+2013-01-25,"Ally Bank","Online Savings Account",0.9
+2013-03-11,"Ally Bank","Online Savings Account",0.84
+2013-10-25,"Ally Bank","Online Savings Account",0.86
+2013-11-12,"Ally Bank","Online Savings Account",0.85
+2014-01-10,"Ally Bank","Online Savings Account",0.87
+2014-09-05,"Ally Bank","Online Savings Account",0.9
+2014-12-12,"Ally Bank","Online Savings Account",0.95
+2014-12-19,"Ally Bank","Online Savings Account",0.99
+2015-09-25,"Ally Bank","Online Savings Account",1
+2017-04-21,"Ally Bank","Online Savings Account",1.05
+2017-06-30,"Ally Bank","Online Savings Account",1.15
+2017-09-01,"Ally Bank","Online Savings Account",1.2
+2017-10-27,"Ally Bank","Online Savings Account",1.25
+2018-01-19,"Ally Bank","Online Savings Account",1.35
+2018-02-09,"Ally Bank","Online Savings Account",1.45
+2018-04-27,"Ally Bank","Online Savings Account",1.5
+2018-05-11,"Ally Bank","Online Savings Account",1.6
+2018-06-15,"Ally Bank","Online Savings Account",1.65
+2018-06-29,"Ally Bank","Online Savings Account",1.75
+2018-08-03,"Ally Bank","Online Savings Account",1.8
+2018-08-31,"Ally Bank","Online Savings Account",1.85
+2018-10-05,"Ally Bank","Online Savings Account",1.9
+2018-11-15,"Ally Bank","Online Savings Account",2
+2019-01-17,"Ally Bank","Online Savings Account",2.2
+2019-06-25,"Ally Bank","Online Savings Account",2.1
+2019-08-06,"Ally Bank","Online Savings Account",1.9
+2019-10-10,"Ally Bank","Online Savings Account",1.8
+2019-11-13,"Ally Bank","Online Savings Account",1.7
+2019-12-20,"Ally Bank","Online Savings Account",1.6
+2020-03-13,"Ally Bank","Online Savings Account",1.5
+2020-05-12,"Ally Bank","Online Savings Account",1.25
+2020-06-12,"Ally Bank","Online Savings Account",1.1
+2020-07-08,"Ally Bank","Online Savings Account",1
+2020-08-14,"Ally Bank","Online Savings Account",0.8
+2020-09-25,"Ally Bank","Online Savings Account",0.6
+2020-12-11,"Ally Bank","Online Savings Account",0.5
+2022-05-11,"Ally Bank","Online Savings Account",0.6
+2022-05-27,"Ally Bank","Online Savings Account",0.75
+2022-06-10,"Ally Bank","Online Savings Account",0.9
+2022-06-24,"Ally Bank","Online Savings Account",1
+2022-07-12,"Ally Bank","Online Savings Account",1.15
+2022-07-17,"Ally Bank","Online Savings Account",1.25
+2022-08-02,"Ally Bank","Online Savings Account",1.4
+2022-08-05,"Ally Bank","Online Savings Account",1.6
+2022-08-17,"Ally Bank","Online Savings Account",1.75
+2022-08-27,"Ally Bank","Online Savings Account",1.85
+2022-09-08,"Ally Bank","Online Savings Account",2
+2022-09-29,"Ally Bank","Online Savings Account",2.1
+2022-10-10,"Ally Bank","Online Savings Account",2.25
+2022-10-20,"Ally Bank","Online Savings Account",2.35
+2022-11-03,"Ally Bank","Online Savings Account",2.5
+2022-11-09,"Ally Bank","Online Savings Account",2.75
+2022-11-22,"Ally Bank","Online Savings Account",3
+2022-12-26,"Ally Bank","Online Savings Account",3.3
+2023-02-05,"Ally Bank","Online Savings Account",3.4
+2023-03-10,"Ally Bank","Online Savings Account",3.6
+2023-03-26,"Ally Bank","Online Savings Account",3.75
+2023-05-25,"Ally Bank","Online Savings Account",3.85
+2023-06-08,"Ally Bank","Online Savings Account",4
+2023-08-01,"Ally Bank","Online Savings Account",4.25
+2023-12-27,"Ally Bank","Online Savings Account",4.35
+2024-03-22,"Ally Bank","Online Savings Account",4.25
+2024-04-19,"Ally Bank","Online Savings Account",4.2
+2024-09-27,"Ally Bank","Online Savings Account",4
+2024-11-22,"Ally Bank","Online Savings Account",3.85
+2024-12-11,"Ally Bank","Online Savings Account",3.8
+2025-02-19,"Ally Bank","Online Savings Account",3.7
+2025-04-01,"Ally Bank","Online Savings Account",3.6
+2025-06-19,"Ally Bank","Online Savings Account",3.5
+2025-09-26,"Ally Bank","Online Savings Account",3.4
+2025-10-31,"Ally Bank","Online Savings Account",3.3
+2026-02-20,"Ally Bank","Online Savings Account",3.2
+2026-04-16,"Ally Bank","Online Savings Account",3.1
+2026-06-03,"Ally Bank","Online Savings Account",3
+2009-12-21,"American Express","American Express® High Yield Savings Account",1.5
+2010-03-13,"American Express","American Express® High Yield Savings Account",1.3
+2011-03-03,"American Express","American Express® High Yield Savings Account",1.15
+2011-06-16,"American Express","American Express® High Yield Savings Account",1
+2011-11-24,"American Express","American Express® High Yield Savings Account",0.9
+2012-02-24,"American Express","American Express® High Yield Savings Account",0.75
+2012-05-31,"American Express","American Express® High Yield Savings Account",0.85
+2012-08-23,"American Express","American Express® High Yield Savings Account",0.9
+2013-02-15,"American Express","American Express® High Yield Savings Account",0.85
+2014-02-25,"American Express","American Express® High Yield Savings Account",0.8
+2014-12-11,"American Express","American Express® High Yield Savings Account",0.85
+2015-01-22,"American Express","American Express® High Yield Savings Account",0.9
+2017-05-18,"American Express","American Express® High Yield Savings Account",0.95
+2017-06-19,"American Express","American Express® High Yield Savings Account",1.05
+2017-07-13,"American Express","American Express® High Yield Savings Account",1.15
+2017-09-28,"American Express","American Express® High Yield Savings Account",1.25
+2017-12-14,"American Express","American Express® High Yield Savings Account",1.35
+2018-01-25,"American Express","American Express® High Yield Savings Account",1.45
+2018-04-05,"American Express","American Express® High Yield Savings Account",1.55
+2018-05-24,"American Express","American Express® High Yield Savings Account",1.6
+2018-06-07,"American Express","American Express® High Yield Savings Account",1.65
+2018-06-22,"American Express","American Express® High Yield Savings Account",1.75
+2018-08-23,"American Express","American Express® High Yield Savings Account",1.8
+2018-09-27,"American Express","American Express® High Yield Savings Account",1.9
+2018-11-15,"American Express","American Express® High Yield Savings Account",2
+2018-12-20,"American Express","American Express® High Yield Savings Account",2.1
+2019-08-22,"American Express","American Express® High Yield Savings Account",1.9
+2019-11-07,"American Express","American Express® High Yield Savings Account",1.75
+2019-12-12,"American Express","American Express® High Yield Savings Account",1.7
+2020-04-03,"American Express","American Express® High Yield Savings Account",1.6
+2020-04-23,"American Express","American Express® High Yield Savings Account",1.5
+2020-05-14,"American Express","American Express® High Yield Savings Account",1.3
+2020-06-04,"American Express","American Express® High Yield Savings Account",1.15
+2020-06-25,"American Express","American Express® High Yield Savings Account",1
+2020-08-18,"American Express","American Express® High Yield Savings Account",0.8
+2020-09-17,"American Express","American Express® High Yield Savings Account",0.6
+2020-12-17,"American Express","American Express® High Yield Savings Account",0.5
+2021-03-11,"American Express","American Express® High Yield Savings Account",0.4
+2022-01-05,"American Express","American Express® High Yield Savings Account",0.5
+2022-04-28,"American Express","American Express® High Yield Savings Account",0.6
+2022-05-25,"American Express","American Express® High Yield Savings Account",0.65
+2022-06-09,"American Express","American Express® High Yield Savings Account",0.75
+2022-06-21,"American Express","American Express® High Yield Savings Account",0.9
+2022-06-29,"American Express","American Express® High Yield Savings Account",1
+2022-07-15,"American Express","American Express® High Yield Savings Account",1.15
+2022-07-29,"American Express","American Express® High Yield Savings Account",1.25
+2022-08-04,"American Express","American Express® High Yield Savings Account",1.4
+2022-08-11,"American Express","American Express® High Yield Savings Account",1.5
+2022-08-19,"American Express","American Express® High Yield Savings Account",1.65
+2022-08-31,"American Express","American Express® High Yield Savings Account",1.75
+2022-09-15,"American Express","American Express® High Yield Savings Account",1.9
+2022-09-29,"American Express","American Express® High Yield Savings Account",2
+2022-10-06,"American Express","American Express® High Yield Savings Account",2.15
+2022-10-20,"American Express","American Express® High Yield Savings Account",2.25
+2022-10-27,"American Express","American Express® High Yield Savings Account",2.35
+2022-11-03,"American Express","American Express® High Yield Savings Account",2.5
+2022-11-09,"American Express","American Express® High Yield Savings Account",2.75
+2022-11-17,"American Express","American Express® High Yield Savings Account",3
+2022-12-22,"American Express","American Express® High Yield Savings Account",3.3
+2023-02-08,"American Express","American Express® High Yield Savings Account",3.4
+2023-02-16,"American Express","American Express® High Yield Savings Account",3.5
+2023-03-16,"American Express","American Express® High Yield Savings Account",3.75
+2023-05-16,"American Express","American Express® High Yield Savings Account",3.9
+2023-05-31,"American Express","American Express® High Yield Savings Account",4
+2023-08-01,"American Express","American Express® High Yield Savings Account",4.15
+2023-08-18,"American Express","American Express® High Yield Savings Account",4.25
+2023-09-27,"American Express","American Express® High Yield Savings Account",4.3
+2023-12-14,"American Express","American Express® High Yield Savings Account",4.35
+2024-04-09,"American Express","American Express® High Yield Savings Account",4.3
+2024-04-25,"American Express","American Express® High Yield Savings Account",4.25
+2024-10-02,"American Express","American Express® High Yield Savings Account",4.1
+2024-10-24,"American Express","American Express® High Yield Savings Account",4
+2024-11-27,"American Express","American Express® High Yield Savings Account",3.9
+2024-12-17,"American Express","American Express® High Yield Savings Account",3.8
+2025-02-21,"American Express","American Express® High Yield Savings Account",3.7
+2025-05-08,"American Express","American Express® High Yield Savings Account",3.6
+2025-07-23,"American Express","American Express® High Yield Savings Account",3.5
+2025-11-26,"American Express","American Express® High Yield Savings Account",3.4
+2025-12-31,"American Express","American Express® High Yield Savings Account",3.3
+2026-03-18,"American Express","American Express® High Yield Savings Account",3.2
+2026-05-19,"American Express","American Express® High Yield Savings Account",3.1
+2019-09-19,"Capital One 360","360 Performance Savings",1.9
+2019-11-15,"Capital One 360","360 Performance Savings",1.8
+2019-12-13,"Capital One 360","360 Performance Savings",1.7
+2020-03-12,"Capital One 360","360 Performance Savings",1.5
+2020-05-19,"Capital One 360","360 Performance Savings",1.3
+2020-06-02,"Capital One 360","360 Performance Savings",1.15
+2020-06-16,"Capital One 360","360 Performance Savings",1
+2020-08-04,"Capital One 360","360 Performance Savings",0.8
+2020-08-26,"Capital One 360","360 Performance Savings",0.65
+2020-09-29,"Capital One 360","360 Performance Savings",0.5
+2020-12-01,"Capital One 360","360 Performance Savings",0.4
+2022-04-21,"Capital One 360","360 Performance Savings",0.6
+2022-05-26,"Capital One 360","360 Performance Savings",0.7
+2022-06-07,"Capital One 360","360 Performance Savings",0.8
+2022-06-15,"Capital One 360","360 Performance Savings",0.9
+2022-06-23,"Capital One 360","360 Performance Savings",1
+2022-07-13,"Capital One 360","360 Performance Savings",1.2
+2022-07-27,"Capital One 360","360 Performance Savings",1.3
+2022-08-04,"Capital One 360","360 Performance Savings",1.5
+2022-08-17,"Capital One 360","360 Performance Savings",1.7
+2022-08-25,"Capital One 360","360 Performance Savings",1.75
+2022-09-07,"Capital One 360","360 Performance Savings",1.9
+2022-09-20,"Capital One 360","360 Performance Savings",2
+2022-09-27,"Capital One 360","360 Performance Savings",2.15
+2022-10-06,"Capital One 360","360 Performance Savings",2.2
+2022-10-13,"Capital One 360","360 Performance Savings",2.25
+2022-10-18,"Capital One 360","360 Performance Savings",2.3
+2022-10-21,"Capital One 360","360 Performance Savings",2.35
+2022-10-28,"Capital One 360","360 Performance Savings",3
+2022-12-14,"Capital One 360","360 Performance Savings",3.3
+2023-02-02,"Capital One 360","360 Performance Savings",3.4
+2023-04-04,"Capital One 360","360 Performance Savings",3.5
+2023-05-02,"Capital One 360","360 Performance Savings",3.75
+2023-05-24,"Capital One 360","360 Performance Savings",3.9
+2023-06-02,"Capital One 360","360 Performance Savings",4
+2023-06-13,"Capital One 360","360 Performance Savings",4.1
+2023-06-23,"Capital One 360","360 Performance Savings",4.15
+2023-07-21,"Capital One 360","360 Performance Savings",4.3
+2023-12-06,"Capital One 360","360 Performance Savings",4.35
+2024-04-11,"Capital One 360","360 Performance Savings",4.25
+2024-09-27,"Capital One 360","360 Performance Savings",4.1
+2024-10-23,"Capital One 360","360 Performance Savings",4
+2024-11-21,"Capital One 360","360 Performance Savings",3.9
+2024-12-06,"Capital One 360","360 Performance Savings",3.8
+2025-02-06,"Capital One 360","360 Performance Savings",3.7
+2025-04-08,"Capital One 360","360 Performance Savings",3.6
+2025-06-26,"Capital One 360","360 Performance Savings",3.5
+2025-10-01,"Capital One 360","360 Performance Savings",3.4
+2026-01-08,"Capital One 360","360 Performance Savings",3.3
+2026-03-12,"Capital One 360","360 Performance Savings",3.2
+2026-04-24,"Capital One 360","360 Performance Savings",3.1
+2026-06-02,"Capital One 360","360 Performance Savings",3
+2023-03-17,"CIT Bank","Platinum Savings",4.4
+2023-03-31,"CIT Bank","Platinum Savings",4.75
+2023-05-09,"CIT Bank","Platinum Savings",4.85
+2023-06-16,"CIT Bank","Platinum Savings",4.95
+2023-07-27,"CIT Bank","Platinum Savings",5.05
+2024-05-03,"CIT Bank","Platinum Savings",5
+2024-09-04,"CIT Bank","Platinum Savings",4.85
+2024-09-25,"CIT Bank","Platinum Savings",4.7
+2024-11-13,"CIT Bank","Platinum Savings",4.55
+2024-12-20,"CIT Bank","Platinum Savings",4.35
+2025-02-06,"CIT Bank","Platinum Savings",4.3
+2025-03-20,"CIT Bank","Platinum Savings",4.1
+2025-06-12,"CIT Bank","Platinum Savings",4
+2025-09-23,"CIT Bank","Platinum Savings",3.85
+2025-11-20,"CIT Bank","Platinum Savings",3.75
+2026-03-11,"CIT Bank","Platinum Savings",4.1
+2016-04-18,"Marcus by Goldman Sachs","Online Savings Account",1.05
+2017-06-07,"Marcus by Goldman Sachs","Online Savings Account",1.2
+2017-10-12,"Marcus by Goldman Sachs","Online Savings Account",1.3
+2017-12-28,"Marcus by Goldman Sachs","Online Savings Account",1.4
+2018-01-12,"Marcus by Goldman Sachs","Online Savings Account",1.5
+2018-04-09,"Marcus by Goldman Sachs","Online Savings Account",1.6
+2018-05-15,"Marcus by Goldman Sachs","Online Savings Account",1.7
+2018-06-22,"Marcus by Goldman Sachs","Online Savings Account",1.8
+2018-08-09,"Marcus by Goldman Sachs","Online Savings Account",1.85
+2018-09-19,"Marcus by Goldman Sachs","Online Savings Account",1.9
+2018-10-12,"Marcus by Goldman Sachs","Online Savings Account",1.95
+2018-10-26,"Marcus by Goldman Sachs","Online Savings Account",2.05
+2019-01-04,"Marcus by Goldman Sachs","Online Savings Account",2.25
+2019-06-28,"Marcus by Goldman Sachs","Online Savings Account",2.15
+2019-08-27,"Marcus by Goldman Sachs","Online Savings Account",2
+2019-10-04,"Marcus by Goldman Sachs","Online Savings Account",1.9
+2019-11-19,"Marcus by Goldman Sachs","Online Savings Account",1.7
+2020-04-15,"Marcus by Goldman Sachs","Online Savings Account",1.55
+2020-05-08,"Marcus by Goldman Sachs","Online Savings Account",1.3
+2020-06-16,"Marcus by Goldman Sachs","Online Savings Account",1.05
+2020-08-04,"Marcus by Goldman Sachs","Online Savings Account",0.8
+2020-09-09,"Marcus by Goldman Sachs","Online Savings Account",0.6
+2020-11-17,"Marcus by Goldman Sachs","Online Savings Account",0.5
+2022-04-22,"Marcus by Goldman Sachs","Online Savings Account",0.6
+2022-05-18,"Marcus by Goldman Sachs","Online Savings Account",0.7
+2022-06-01,"Marcus by Goldman Sachs","Online Savings Account",0.85
+2022-06-22,"Marcus by Goldman Sachs","Online Savings Account",1
+2022-07-01,"Marcus by Goldman Sachs","Online Savings Account",1.2
+2022-07-29,"Marcus by Goldman Sachs","Online Savings Account",1.5
+2022-08-12,"Marcus by Goldman Sachs","Online Savings Account",1.7
+2022-09-09,"Marcus by Goldman Sachs","Online Savings Account",1.9
+2022-09-22,"Marcus by Goldman Sachs","Online Savings Account",2.15
+2022-10-14,"Marcus by Goldman Sachs","Online Savings Account",2.35
+2022-10-28,"Marcus by Goldman Sachs","Online Savings Account",2.5
+2022-11-08,"Marcus by Goldman Sachs","Online Savings Account",3
+2022-12-21,"Marcus by Goldman Sachs","Online Savings Account",3.3
+2023-02-07,"Marcus by Goldman Sachs","Online Savings Account",3.5
+2023-02-15,"Marcus by Goldman Sachs","Online Savings Account",3.75
+2023-04-14,"Marcus by Goldman Sachs","Online Savings Account",3.9
+2023-05-09,"Marcus by Goldman Sachs","Online Savings Account",4.15
+2023-08-04,"Marcus by Goldman Sachs","Online Savings Account",4.3
+2023-09-15,"Marcus by Goldman Sachs","Online Savings Account",4.4
+2023-12-20,"Marcus by Goldman Sachs","Online Savings Account",4.5
+2024-04-03,"Marcus by Goldman Sachs","Online Savings Account",4.4
+2024-09-25,"Marcus by Goldman Sachs","Online Savings Account",4.25
+2024-10-11,"Marcus by Goldman Sachs","Online Savings Account",4.1
+2024-12-04,"Marcus by Goldman Sachs","Online Savings Account",3.9
+2025-03-25,"Marcus by Goldman Sachs","Online Savings Account",3.75
+2025-05-28,"Marcus by Goldman Sachs","Online Savings Account",3.65
+2026-04-21,"Marcus by Goldman Sachs","Online Savings Account",3.5
+2022-11-03,"Primis Bank","Primis Savings Account - Online Only",3.05
+2022-11-08,"Primis Bank","Primis Savings Account - Online Only",3.5
+2022-12-28,"Primis Bank","Primis Savings Account - Online Only",4.05
+2023-01-31,"Primis Bank","Primis Savings Account - Online Only",5.03
+2023-02-17,"Primis Bank","Primis Savings Account - Online Only",4.35
+2023-04-18,"Primis Bank","Primis Savings Account - Online Only",4.77
+2023-05-11,"Primis Bank","Primis Savings Account - Online Only",4.92
+2023-08-25,"Primis Bank","Primis Savings Account - Online Only",5.07
+2024-09-25,"Primis Bank","Primis Savings Account - Online Only",4.75
+2024-12-05,"Primis Bank","Primis Savings Account - Online Only",4.7
+2025-01-11,"Primis Bank","Primis Savings Account - Online Only",4.35
+2025-07-29,"Primis Bank","Primis Savings Account - Online Only",4.2
+2025-10-06,"Primis Bank","Primis Savings Account - Online Only",3.85
+2010-03-04,"Sallie Mae","High-Yield Savings Account",1.35
+2010-03-09,"Sallie Mae","High-Yield Savings Account",1.25
+2010-05-01,"Sallie Mae","High-Yield Savings Account",1.4
+2010-11-05,"Sallie Mae","High-Yield Savings Account",1.3
+2011-02-01,"Sallie Mae","High-Yield Savings Account",1.25
+2011-03-08,"Sallie Mae","High-Yield Savings Account",1.1
+2011-09-02,"Sallie Mae","High-Yield Savings Account",1.01
+2011-09-30,"Sallie Mae","High-Yield Savings Account",1
+2012-01-20,"Sallie Mae","High-Yield Savings Account",0.85
+2012-03-02,"Sallie Mae","High-Yield Savings Account",0.8
+2012-03-17,"Sallie Mae","High-Yield Savings Account",0.75
+2012-07-20,"Sallie Mae","High-Yield Savings Account",0.8
+2012-09-28,"Sallie Mae","High-Yield Savings Account",0.9
+2013-01-25,"Sallie Mae","High-Yield Savings Account",0.85
+2013-09-19,"Sallie Mae","High-Yield Savings Account",0.8
+2017-03-17,"Sallie Mae","High-Yield Savings Account",0.9
+2017-07-12,"Sallie Mae","High-Yield Savings Account",1
+2018-01-26,"Sallie Mae","High-Yield Savings Account",1.35
+2018-03-09,"Sallie Mae","High-Yield Savings Account",1.45
+2018-04-07,"Sallie Mae","High-Yield Savings Account",1.55
+2018-05-25,"Sallie Mae","High-Yield Savings Account",1.65
+2018-07-02,"Sallie Mae","High-Yield Savings Account",1.75
+2018-10-05,"Sallie Mae","High-Yield Savings Account",1.85
+2018-10-18,"Sallie Mae","High-Yield Savings Account",2.02
+2018-11-16,"Sallie Mae","High-Yield Savings Account",2.1
+2019-07-18,"Sallie Mae","High-Yield Savings Account",2
+2019-09-24,"Sallie Mae","High-Yield Savings Account",1.9
+2019-10-29,"Sallie Mae","High-Yield Savings Account",1.75
+2019-12-11,"Sallie Mae","High-Yield Savings Account",1.7
+2020-03-06,"Sallie Mae","High-Yield Savings Account",1.65
+2020-03-17,"Sallie Mae","High-Yield Savings Account",1.4
+2020-04-09,"Sallie Mae","High-Yield Savings Account",1.3
+2020-04-22,"Sallie Mae","High-Yield Savings Account",1.2
+2020-05-02,"Sallie Mae","High-Yield Savings Account",1.1
+2020-05-29,"Sallie Mae","High-Yield Savings Account",1
+2020-06-30,"Sallie Mae","High-Yield Savings Account",0.9
+2020-08-07,"Sallie Mae","High-Yield Savings Account",0.85
+2020-08-20,"Sallie Mae","High-Yield Savings Account",0.75
+2020-08-28,"Sallie Mae","High-Yield Savings Account",0.65
+2020-10-07,"Sallie Mae","High-Yield Savings Account",0.55
+2020-10-24,"Sallie Mae","High-Yield Savings Account",0.5
+2021-01-12,"Sallie Mae","High-Yield Savings Account",0.4
+2021-01-29,"Sallie Mae","High-Yield Savings Account",0.35
+2022-04-14,"Sallie Mae","High-Yield Savings Account",0.55
+2022-06-03,"Sallie Mae","High-Yield Savings Account",0.6
+2022-06-16,"Sallie Mae","High-Yield Savings Account",0.8
+2022-06-29,"Sallie Mae","High-Yield Savings Account",1.1
+2022-07-29,"Sallie Mae","High-Yield Savings Account",1.4
+2022-08-12,"Sallie Mae","High-Yield Savings Account",1.65
+2022-08-26,"Sallie Mae","High-Yield Savings Account",1.75
+2022-09-09,"Sallie Mae","High-Yield Savings Account",1.95
+2022-09-22,"Sallie Mae","High-Yield Savings Account",2.15
+2022-10-06,"Sallie Mae","High-Yield Savings Account",2.4
+2022-10-21,"Sallie Mae","High-Yield Savings Account",2.6
+2022-11-07,"Sallie Mae","High-Yield Savings Account",3.1
+2022-12-23,"Sallie Mae","High-Yield Savings Account",3.2
+2023-01-27,"Sallie Mae","High-Yield Savings Account",3.5
+2023-02-25,"Sallie Mae","High-Yield Savings Account",3.65
+2023-03-10,"Sallie Mae","High-Yield Savings Account",3.7
+2023-03-24,"Sallie Mae","High-Yield Savings Account",3.95
+2023-05-22,"Sallie Mae","High-Yield Savings Account",4.05
+2023-06-23,"Sallie Mae","High-Yield Savings Account",4.1
+2023-07-14,"Sallie Mae","High-Yield Savings Account",4.25
+2023-08-02,"Sallie Mae","High-Yield Savings Account",4.5
+2024-10-04,"Sallie Mae","High-Yield Savings Account",4.2
+2024-12-06,"Sallie Mae","High-Yield Savings Account",4.1
+2025-01-11,"Sallie Mae","High-Yield Savings Account",4
+2025-01-31,"Sallie Mae","High-Yield Savings Account",3.9
+2026-02-13,"Sallie Mae","High-Yield Savings Account",3.85
+2026-03-26,"Sallie Mae","High-Yield Savings Account",3.75
+2022-03-09,"SoFi","SoFi Checking and Savings",1
+2022-04-11,"SoFi","SoFi Checking and Savings",1.25
+2022-06-28,"SoFi","SoFi Checking and Savings",1.5
+2022-07-26,"SoFi","SoFi Checking and Savings",1.8
+2022-08-12,"SoFi","SoFi Checking and Savings",2
+2022-10-03,"SoFi","SoFi Checking and Savings",2.5
+2022-11-03,"SoFi","SoFi Checking and Savings",3
+2022-12-01,"SoFi","SoFi Checking and Savings",3.25
+2022-12-16,"SoFi","SoFi Checking and Savings",3.5
+2023-01-04,"SoFi","SoFi Checking and Savings",3.75
+2023-03-19,"SoFi","SoFi Checking and Savings",4
+2023-04-26,"SoFi","SoFi Checking and Savings",4.2
+2023-06-09,"SoFi","SoFi Checking and Savings",4.3
+2023-07-11,"SoFi","SoFi Checking and Savings",4.4
+2023-08-02,"SoFi","SoFi Checking and Savings",4.5
+2023-10-24,"SoFi","SoFi Checking and Savings",4.6
+2024-08-26,"SoFi","SoFi Checking and Savings",4.5
+2024-10-07,"SoFi","SoFi Checking and Savings",4.3
+2024-10-30,"SoFi","SoFi Checking and Savings",4.2
+2024-12-02,"SoFi","SoFi Checking and Savings",4
+2025-01-23,"SoFi","SoFi Checking and Savings",3.8
+2025-08-12,"SoFi","SoFi Checking and Savings",4.5
+2025-11-11,"SoFi","SoFi Checking and Savings",4.3
+2025-12-02,"SoFi","SoFi Checking and Savings",3.6
+2025-12-22,"SoFi","SoFi Checking and Savings",3.3
+2026-01-01,"SoFi","SoFi Checking and Savings",4
+2026-05-27,"SoFi","SoFi Checking and Savings",3.8
+2024-05-20,"Western Alliance","High-Yield Savings Premier",5.36
+2024-07-12,"Western Alliance","High-Yield Savings Premier",5.31
+2024-09-30,"Western Alliance","High-Yield Savings Premier",5.11
+2024-10-08,"Western Alliance","High-Yield Savings Premier",5.01
+2024-10-16,"Western Alliance","High-Yield Savings Premier",4.96
+2024-10-22,"Western Alliance","High-Yield Savings Premier",4.81
+2024-11-07,"Western Alliance","High-Yield Savings Premier",4.46
+2025-01-03,"Western Alliance","High-Yield Savings Premier",4.4
+2025-01-16,"Western Alliance","High-Yield Savings Premier",4.35
+2025-01-24,"Western Alliance","High-Yield Savings Premier",4.3
+2025-03-20,"Western Alliance","High-Yield Savings Premier",4.25
+2025-05-02,"Western Alliance","High-Yield Savings Premier",4.3
+2025-07-02,"Western Alliance","High-Yield Savings Premier",4.25
+2025-07-29,"Western Alliance","High-Yield Savings Premier",4.3
+2025-09-04,"Western Alliance","High-Yield Savings Premier",4.25
+2025-09-17,"Western Alliance","High-Yield Savings Premier",4.2
+2025-09-30,"Western Alliance","High-Yield Savings Premier",4.1
+2025-11-06,"Western Alliance","High-Yield Savings Premier",4.05
+2025-11-18,"Western Alliance","High-Yield Savings Premier",3.95
+2025-12-02,"Western Alliance","High-Yield Savings Premier",3.9
+2026-01-08,"Western Alliance","High-Yield Savings Premier",3.8
+2026-06-05,"Western Alliance","High-Yield Savings Premier",3.8
