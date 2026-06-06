@@ -1,31 +1,17 @@
 "use client";
 
 import {
-  Chart as ChartJS,
-  LinearScale,
-  TimeScale,
-  PointElement,
-  LineElement,
-  Title,
+  ResponsiveContainer,
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
   Tooltip,
   Legend,
-  Filler,
-  ChartOptions,
-} from "chart.js";
-import "chartjs-adapter-date-fns";
-import { Line } from "react-chartjs-2";
+} from "recharts";
 import { Account } from "@/lib/apyData";
-
-ChartJS.register(
-  LinearScale,
-  TimeScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
-);
+import { useIsDark } from "@/lib/useTheme";
 
 interface APYChartProps {
   accounts: Account[];
@@ -33,74 +19,109 @@ interface APYChartProps {
   years?: number;
 }
 
+/** APY in effect on `dayMs` for a sorted-ascending history (null before it starts). */
+function apyAsOf(history: { date: string; apy: number }[], dayMs: number): number | null {
+  let val: number | null = null;
+  for (const r of history) {
+    if (new Date(r.date).getTime() <= dayMs) val = r.apy;
+    else break;
+  }
+  return val;
+}
+
 export default function APYChart({ accounts, years = 5 }: APYChartProps) {
-  // Default x-window: the last `years` years up to today.
+  const isDark = useIsDark();
+  const gridColor = isDark ? "#374151" : "#e5e7eb";
+  const axisColor = isDark ? "#9ca3af" : "#6b7280";
+  const tooltipStyle = isDark
+    ? { backgroundColor: "#1f2937", border: "1px solid #374151", color: "#f3f4f6" }
+    : { backgroundColor: "#ffffff", border: "1px solid #e5e7eb", color: "#111827" };
+
   const now = new Date();
-  const windowStart = new Date(now);
-  windowStart.setFullYear(windowStart.getFullYear() - years);
+  const windowStart = new Date(now.getFullYear() - years, now.getMonth(), now.getDate());
+  const minMs = windowStart.getTime();
+  const maxMs = now.getTime();
 
-  // Full history is kept in each dataset; the axis min/max controls the view,
-  // and stepped lines correctly hold each APY flat until the next change.
-  const datasets = accounts.map((account) => ({
-    label: account.name,
-    data: account.history.map((record) => ({
-      x: new Date(record.date).getTime(),
-      y: record.apy,
-    })),
-    borderColor: account.color,
-    backgroundColor: account.color + "20",
-    stepped: true as const,
-    borderWidth: 2,
-    fill: false,
-    pointRadius: 0,
-    pointHoverRadius: 5,
-    pointBackgroundColor: account.color,
-  }));
+  // Unified rows keyed by timestamp: every rate-change date across the selected
+  // banks, plus "now". Each row carries every bank's APY in effect at that time,
+  // so stepAfter lines render exact step changes.
+  const times = new Set<number>([maxMs]);
+  accounts.forEach((a) =>
+    a.history.forEach((r) => times.add(new Date(r.date).getTime()))
+  );
+  const sortedTimes = Array.from(times).sort((x, y) => x - y);
 
-  const options: ChartOptions<"line"> = {
-    responsive: true,
-    maintainAspectRatio: false,
-    interaction: { mode: "nearest", intersect: false },
-    plugins: {
-      legend: {
-        position: "top" as const,
-        labels: { usePointStyle: true, padding: 15 },
-      },
-      tooltip: {
-        backgroundColor: "rgba(0, 0, 0, 0.8)",
-        padding: 12,
-        callbacks: {
-          title: (items) =>
-            new Date(Number(items[0].parsed.x)).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            }),
-          label: (ctx) => `${ctx.dataset.label}: ${Number(ctx.parsed.y).toFixed(2)}%`,
-        },
-      },
-    },
-    scales: {
-      y: {
-        beginAtZero: false,
-        grace: "10%",
-        ticks: { callback: (value: any) => `${value}%` },
-        title: { display: true, text: "APY (%)" },
-      },
-      x: {
-        type: "time",
-        min: windowStart.getTime(),
-        max: now.getTime(),
-        time: { unit: "year", tooltipFormat: "MMM d, yyyy" },
-      },
-    },
-  };
+  const data = sortedTimes.map((t) => {
+    const row: Record<string, number | null> = { t };
+    accounts.forEach((a) => {
+      row[a.name] = apyAsOf(a.history, t);
+    });
+    return row;
+  });
+
+  // One tick at Jan 1 of each year within the visible window.
+  const yearTicks: number[] = [];
+  for (let y = windowStart.getFullYear(); y <= now.getFullYear(); y++) {
+    const t = new Date(y, 0, 1).getTime();
+    if (t >= minMs && t <= maxMs) yearTicks.push(t);
+  }
 
   return (
-    <div className="w-full h-full bg-white rounded-lg p-0 sm:p-2 flex items-center justify-center">
-      <div className="w-full h-full relative">
-        <Line data={{ datasets }} options={options} />
-      </div>
+    <div className="w-full h-full bg-white dark:bg-gray-800 rounded-lg p-0 sm:p-2">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart data={data} margin={{ top: 16, right: 24, bottom: 8, left: 8 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
+          <XAxis
+            dataKey="t"
+            type="number"
+            scale="time"
+            domain={[minMs, maxMs]}
+            ticks={yearTicks}
+            allowDataOverflow
+            tickFormatter={(t) => String(new Date(t).getFullYear())}
+            tick={{ fontSize: 12, fill: axisColor }}
+            stroke={gridColor}
+          />
+          <YAxis
+            domain={["auto", "auto"]}
+            tickFormatter={(v) => `${v}%`}
+            tick={{ fontSize: 12, fill: axisColor }}
+            stroke={gridColor}
+            width={48}
+            label={{
+              value: "APY (%)",
+              angle: -90,
+              position: "insideLeft",
+              style: { fill: axisColor, fontSize: 12 },
+            }}
+          />
+          <Tooltip
+            contentStyle={tooltipStyle}
+            labelStyle={{ color: axisColor }}
+            labelFormatter={(t) =>
+              new Date(Number(t)).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })
+            }
+            formatter={(value: any, name: any) => [`${Number(value).toFixed(2)}%`, name]}
+          />
+          <Legend />
+          {accounts.map((a) => (
+            <Line
+              key={a.id}
+              type="stepAfter"
+              dataKey={a.name}
+              stroke={a.color}
+              strokeWidth={2}
+              dot={false}
+              connectNulls={false}
+              isAnimationActive={false}
+            />
+          ))}
+        </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 }

@@ -38,12 +38,12 @@ export default function Dashboard({
     <>
       {/* Chart Section */}
       <section className="mb-12">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
           <div className="px-4 sm:px-6 pt-4 flex items-baseline justify-between">
-            <h2 className="text-lg font-semibold text-gray-900">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
               APY History
             </h2>
-            <span className="text-sm text-gray-500">Last 5 years</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">Last 5 years</span>
           </div>
           <div className="h-80 sm:h-96 md:h-[500px] lg:h-[600px] w-full p-4 sm:p-6">
             {filteredAccounts.length > 0 ? (
@@ -63,21 +63,21 @@ export default function Dashboard({
       </section>
 
       {/* Account Selection Section */}
-      <section className="mb-12 bg-white rounded-lg shadow-lg p-6">
+      <section className="mb-12 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold text-gray-900">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
             Select Accounts to Display
           </h2>
           <div className="flex gap-2">
             <button
               onClick={selectAll}
-              className="px-3 py-1.5 text-sm font-medium rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+              className="px-3 py-1.5 text-sm font-medium rounded-lg border border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 transition-colors"
             >
               Select all
             </button>
             <button
               onClick={removeAll}
-              className="px-3 py-1.5 text-sm font-medium rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors"
+              className="px-3 py-1.5 text-sm font-medium rounded-lg border border-gray-300 text-gray-600 dark:border-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
             >
               Remove all
             </button>
@@ -87,20 +87,20 @@ export default function Dashboard({
           {accounts.map((account) => (
             <label
               key={account.id}
-              className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
             >
               <input
                 type="checkbox"
                 checked={selectedAccounts.has(account.id)}
                 onChange={() => handleAccountToggle(account.id)}
-                className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                className="w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-blue-600 focus:ring-blue-500 cursor-pointer"
               />
               <div className="flex items-center gap-2">
                 <div
                   className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: account.color }}
                 ></div>
-                <span className="font-medium text-gray-900">{account.name}</span>
+                <span className="font-medium text-gray-900 dark:text-gray-100">{account.name}</span>
               </div>
             </label>
           ))}
