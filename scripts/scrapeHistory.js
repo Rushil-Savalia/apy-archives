@@ -90,6 +90,16 @@ const MANUAL_POINTS = [
   },
 ];
 
+// Manual corrections applied to scraped rows AFTER scraping, so they persist
+// across re-scrapes (fixing bad upstream data points). For each entry, every
+// scraped row matching { bankName, date } is either dropped (apy: null) or has
+// its APY overridden (apy: <number>).
+const MANUAL_OVERRIDES = [
+  // CIT's chart shows a spurious jump to 4.1 on 2026-03-11; the rate actually
+  // stayed at 3.75 from Nov 2025. Drop the bad change-point.
+  { bankName: 'CIT Bank', date: '2026-03-11', apy: null },
+];
+
 const norm = (s) => (s || '').replace(/\s+/g, ' ').trim().toLowerCase();
 
 async function waitForRealPage(page, timeoutMs = 300000) {
@@ -233,6 +243,24 @@ function toCsv(rows) {
   }
 
   await browser.close();
+
+  // Apply manual corrections to scraped rows (drop or override bad points).
+  for (const ov of MANUAL_OVERRIDES) {
+    for (let i = allRows.length - 1; i >= 0; i--) {
+      const r = allRows[i];
+      if (r.bankName === ov.bankName && r.date === ov.date) {
+        if (ov.apy === null) {
+          allRows.splice(i, 1);
+          console.log(`- dropped point: ${ov.bankName} ${ov.date}`);
+        } else {
+          console.log(
+            `~ override: ${ov.bankName} ${ov.date} ${r.apy}% -> ${ov.apy}%`
+          );
+          r.apy = ov.apy;
+        }
+      }
+    }
+  }
 
   // Append manual points (deduped against an identical scraped row).
   for (const mp of MANUAL_POINTS) {
