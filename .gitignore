@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+.env.local
+.env.*.local
+*.log
+
+# OS / editor
+.DS_Store
+*.tsbuildinfo
+
+# Puppeteer scraper persistent browser profile (holds Cloudflare clearance cookie)
+scripts/.chrome-profile/
+scripts/.explore-out/
+
+# Local Claude Code settings
+.claude/
