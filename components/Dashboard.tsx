@@ -23,6 +23,17 @@ export default function Dashboard({
     [accounts, selectedAccounts]
   );
 
+  // Featured banks lead the selection grid (first row); the rest follow in
+  // their existing (APY-sorted) order.
+  const selectionOrder = useMemo(() => {
+    const featured = ["SoFi", "Marcus by Goldman Sachs", "CIT Bank"];
+    const rank = (a: Account) => {
+      const i = featured.indexOf(a.name);
+      return i === -1 ? featured.length : i;
+    };
+    return [...accounts].sort((a, b) => rank(a) - rank(b));
+  }, [accounts]);
+
   const handleAccountToggle = (accountId: string) => {
     const next = new Set(selectedAccounts);
     if (next.has(accountId)) next.delete(accountId);
@@ -84,7 +95,7 @@ export default function Dashboard({
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {accounts.map((account) => (
+          {selectionOrder.map((account) => (
             <label
               key={account.id}
               className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
