@@ -49,11 +49,14 @@ export default function Dashboard({
     <>
       {/* Chart Section */}
       <section className="mb-12">
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-          <div className="px-4 sm:px-6 pt-4 flex items-baseline justify-between">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-              APY History
-            </h2>
+        <div className="rounded-2xl bg-white dark:bg-gray-800 ring-1 ring-gray-900/5 dark:ring-white/10 shadow-sm overflow-hidden">
+          <div className="px-4 sm:px-6 pt-5 flex items-baseline justify-between">
+            <div className="flex items-center gap-2.5">
+              <span className="h-5 w-1.5 rounded-full bg-blue-600 dark:bg-blue-400" />
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                APY History
+              </h2>
+            </div>
             <span className="text-sm text-gray-500 dark:text-gray-400">Last 5 years</span>
           </div>
           <div className="h-80 sm:h-96 md:h-[500px] lg:h-[600px] w-full p-4 sm:p-6">
@@ -68,17 +71,15 @@ export default function Dashboard({
         </div>
       </section>
 
-      {/* Account List Section */}
-      <section className="mb-12">
-        <AccountList accounts={accounts} />
-      </section>
-
       {/* Account Selection Section */}
-      <section className="mb-12 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-            Select Accounts to Display
-          </h2>
+      <section className="mb-12 rounded-2xl bg-white dark:bg-gray-800 ring-1 ring-gray-900/5 dark:ring-white/10 shadow-sm p-6">
+        <div className="flex items-center justify-between gap-3 flex-wrap mb-5">
+          <div className="flex items-center gap-2.5">
+            <span className="h-5 w-1.5 rounded-full bg-blue-600 dark:bg-blue-400" />
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+              Select Accounts to Display
+            </h2>
+          </div>
           <div className="flex gap-2">
             <button
               onClick={selectAll}
@@ -94,28 +95,50 @@ export default function Dashboard({
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {selectionOrder.map((account) => (
-            <label
-              key={account.id}
-              className="flex items-center gap-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-            >
-              <input
-                type="checkbox"
-                checked={selectedAccounts.has(account.id)}
-                onChange={() => handleAccountToggle(account.id)}
-                className="w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-blue-600 focus:ring-blue-500 cursor-pointer"
-              />
-              <div className="flex items-center gap-2">
-                <div
-                  className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: account.color }}
-                ></div>
-                <span className="font-medium text-gray-900 dark:text-gray-100">{account.name}</span>
-              </div>
-            </label>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {selectionOrder.map((account) => {
+            const selected = selectedAccounts.has(account.id);
+            return (
+              <label
+                key={account.id}
+                style={selected ? { borderColor: account.color } : undefined}
+                className={`group flex items-center gap-3 cursor-pointer rounded-xl border p-3 transition-all ${
+                  selected
+                    ? "bg-gray-50 dark:bg-gray-700/40"
+                    : "border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/40"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={selected}
+                  onChange={() => handleAccountToggle(account.id)}
+                  className="sr-only"
+                />
+                <span
+                  className="flex h-5 w-5 shrink-0 items-center justify-center rounded-md border-2 transition-colors"
+                  style={{
+                    borderColor: account.color,
+                    backgroundColor: selected ? account.color : "transparent",
+                  }}
+                >
+                  {selected && (
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                  )}
+                </span>
+                <span className="font-medium truncate text-gray-900 dark:text-gray-100">
+                  {account.name}
+                </span>
+              </label>
+            );
+          })}
         </div>
+      </section>
+
+      {/* Account List Section */}
+      <section className="mb-12">
+        <AccountList accounts={accounts} />
       </section>
     </>
   );
