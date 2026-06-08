@@ -1,13 +1,32 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "APY Archives - Track High-Yield Savings Account History",
-  description: "Historical APY comparison for popular high-yield savings accounts",
+  metadataBase: new URL("https://apyarchives.com"),
+  title: {
+    default: "APY Archives — Track High-Yield Savings Account Rate History",
+    template: "%s — APY Archives",
+  },
+  description:
+    "See how high-yield savings account APYs have changed over the years. Compare banks on real rate history, not just today's headline rate.",
+  openGraph: {
+    title: "APY Archives",
+    description: "Historical APY data for high-yield savings accounts.",
+    url: "https://apyarchives.com",
+    siteName: "APY Archives",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "APY Archives",
+    description: "Historical APY data for high-yield savings accounts.",
+  },
 };
 
 export default function RootLayout({
@@ -27,8 +46,10 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-950">
-          {children}
+        <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-950">
+          <Nav />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </div>
         <Analytics />
       </body>
