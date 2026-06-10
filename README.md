@@ -1,9 +1,7 @@
 # APY Archives
 
 A Next.js site that tracks and visualizes the **historical APY** of top high-yield
-savings accounts over time. Data is scraped from
-[DepositAccounts.com](https://www.depositaccounts.com) rate history and stored as
-a CSV that the app reads at build time.
+savings accounts over time. Data is scraped from publicly available sources.
 
 ![APY Archives](https://img.shields.io/badge/Next.js-14-black) ![Recharts](https://img.shields.io/badge/Recharts-3-22b5bf)
 

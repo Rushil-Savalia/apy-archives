@@ -56,7 +56,7 @@ export default function AboutPage() {
         <SectionHeading id="methodology">How we source our data</SectionHeading>
         <p className="my-4">
           Our rate history is compiled from publicly available rate-history data
-          published by DepositAccounts.com, stored as a dataset that this site
+          published by various websites, stored as a dataset that this site
           reads directly. Each data point represents a rate-change event — the date
           a given account&apos;s APY changed — which lets us reconstruct the full
           curve over several years.
@@ -117,19 +117,6 @@ export default function AboutPage() {
           your device is your light/dark theme preference, saved in your
           browser&apos;s local storage so the site remembers your choice. It stays
           on your device and is not sent to us.
-        </p>
-
-        <h3 className="mt-8 mb-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
-          Advertising
-        </h3>
-        <p className="my-4">
-          We do not currently display third-party advertising. If we introduce ads
-          in the future (for example, Google AdSense), we will update this policy
-          to explain how those partners may use cookies to serve ads and how you
-          can opt out, including through{" "}
-          <a href="https://www.google.com/settings/ads" className="font-medium text-blue-600 dark:text-blue-400 underline underline-offset-2">Google Ads Settings</a>{" "}
-          and{" "}
-          <a href="https://policies.google.com/technologies/ads" className="font-medium text-blue-600 dark:text-blue-400 underline underline-offset-2">Google&apos;s advertising policies</a>.
         </p>
 
         <h3 className="mt-8 mb-2 text-xl font-semibold text-gray-900 dark:text-gray-100">

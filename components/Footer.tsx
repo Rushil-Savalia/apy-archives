@@ -35,7 +35,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-6 space-y-2 text-xs text-gray-500 dark:text-gray-500">
           <p>
-            Data sourced from DepositAccounts.com rate history. Actual rates may
+            Data sourced from online sources. Actual rates may
             vary — check official bank websites for current rates. Informational
             only; not financial advice.
           </p>
