@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     title: "APY Archives",
     description: "Historical APY data for high-yield savings accounts.",
   },
+  other: {
+    "google-adsense-account": "ca-pub-3358581619818600",
+  },
 };
 
 export default function RootLayout({
