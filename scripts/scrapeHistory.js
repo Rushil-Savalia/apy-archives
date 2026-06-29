@@ -88,6 +88,22 @@ const MANUAL_POINTS = [
     accountName: 'High-Yield Savings Premier',
     apy: 3.8,
   },
+  // SoFi's chart lags; current rate dropped to 3.10% as of late June 2026.
+  {
+    date: '2026-06-29',
+    bankName: 'SoFi',
+    accountName: 'SoFi Checking and Savings',
+    apy: 3.1,
+  },
+  // Wealthfront has no rate-history chart on DepositAccounts, so we record a
+  // single current-rate point. Base APY 3.30% effective 2026-01-30
+  // (source: wealthfront.com/cash). Not a TARGET — manual point only.
+  {
+    date: '2026-01-30',
+    bankName: 'Wealthfront',
+    accountName: 'Cash Account',
+    apy: 3.3,
+  },
 ];
 
 // Manual corrections applied to scraped rows AFTER scraping, so they persist
