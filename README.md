@@ -69,6 +69,28 @@ then add a `{ bankName, bankUrl, accountName }` entry to `TARGETS` in
 > The scraper and the other helpers in `scripts/` are **development tools** — they
 > are not part of the deployed app, which only reads the committed CSV.
 
+## MCP server
+
+The dataset is also exposed as a remote [MCP](https://modelcontextprotocol.io)
+server so any MCP client (Claude, Cursor, …) can query it directly — no install,
+no API key. It's a single Next.js route handler
+([`app/mcp/route.ts`](app/mcp/route.ts)) that reuses the same `loadAccounts()`
+loader, so it ships with the normal Vercel deploy.
+
+**Endpoint:** `https://apyarchives.com/mcp`
+
+```bash
+claude mcp add --transport http apy-archives https://apyarchives.com/mcp
+```
+
+Tools:
+
+| Tool | Args | Returns |
+| --- | --- | --- |
+| `list_banks` | — | every tracked bank with current APY + history range |
+| `get_current_apys` | — | current APY per bank, highest first |
+| `get_apy_history` | `bank`, optional `from`/`to` (YYYY-MM-DD) | full rate-change history for one bank |
+
 ## Deployment
 
 Deploys to [Vercel](https://vercel.com) with zero configuration (Next.js preset).
